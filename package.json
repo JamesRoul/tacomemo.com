@@ -2,10 +2,10 @@
   "name": "tacomemo",
   "version": "1.0.0",
   "main": "server/server.js",
-  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server/server.js",
-    "build": "cd client && npm install && npm run build"
+    "build-client": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run build-client"
   },
   "engines": {
     "node": "14.x",
