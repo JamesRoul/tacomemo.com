@@ -1,0 +1,27 @@
+{
+  "name": "tacomemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "build:purgecss": "purgecss --css client/src/**/*.css --content client/src/**/*.{html,jsx,js} --output client/src/",
+    "prebuild": "npm run build:purgecss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "purgecss": "^6.0.0"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}
