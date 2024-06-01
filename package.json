@@ -2,14 +2,11 @@
   "name": "tacomemo",
   "version": "1.0.0",
   "main": "server/server.js",
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server/server.js",
-    "build-client": "cd client && npm install && npm run build",
-    "heroku-postbuild": "npm run build-client"
-  },
-  "engines": {
-    "node": "14.x",
-    "npm": "6.x"
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "npm rebuild sqlite3 && cd client && npm install && npm run build"
   },
   "dependencies": {
     "express": "^4.19.2",
