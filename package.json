@@ -5,8 +5,7 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server/server.js",
-    "build": "cd client && npm install && npm run build",
-    "postinstall": "npm install"
+    "build": "cd client && npm install && npm run build"
   },
   "engines": {
     "node": "14.x",
