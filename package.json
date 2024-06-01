@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "build": "cd client && npm install && npm run build",
-    "postinstall": "npm rebuild sqlite3 && npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "express": "^4.19.2",
