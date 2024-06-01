@@ -5,9 +5,7 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
-    "build:purgecss": "purgecss --css client/src/**/*.css --content client/src/**/*.{html,jsx,js} --output client/src/",
-    "prebuild": "npm run build:purgecss"
+    "build": "craco build"
   },
   "keywords": [],
   "author": "",
