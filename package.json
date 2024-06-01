@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node server/server.js",
     "build": "cd client && npm install && npm run build",
-    "postinstall": "cd server && npm rebuild"
+    "postinstall": "cd client && npm run build"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
   },
   "dependencies": {
     "express": "^4.19.2",
