@@ -5,7 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "heroku-postbuild": "cd ../client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
   },
   "keywords": [],
   "author": "",
