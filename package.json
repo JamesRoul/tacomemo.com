@@ -4,12 +4,8 @@
   "main": "server/server.js",
   "proxy": "http://localhost:5000",
   "scripts": {
-   
     "start": "node server/server.js",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm run build"
-    
-    
+    "heroku-postbuild": "npm rebuild"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.3",
