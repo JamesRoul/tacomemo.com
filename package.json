@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server/server.js",
     "build": "cd client && npm install && npm run build",
-    "heroku-postbuild": "cd client && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
+    
+    
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.3",
