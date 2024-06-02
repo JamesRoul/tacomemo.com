@@ -5,7 +5,9 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server/server.js",
-    "heroku-postbuild": "npm rebuild"
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "postinstall": "npm rebuild sqlite3"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.3",
