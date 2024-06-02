@@ -7,7 +7,7 @@
     "start": "node server/server.js",
     "build": "cd client && npm install && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "postinstall": "npm rebuild sqlite3"
+    "postinstall": "cd server && npm install --build-from-source"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.3",
